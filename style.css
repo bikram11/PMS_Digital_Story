@@ -217,7 +217,9 @@
  b,
  strong {
    font-weight: 600; }
- 
+.home-page-text{
+  color: white;
+}
  a {
    background-color: transparent; }
  
