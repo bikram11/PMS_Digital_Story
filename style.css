@@ -3814,12 +3814,7 @@
       transform: rotate(0deg) translate3d(0, 0, 0);
     }
   }
-  .pie-chart {
-    font-family: "Open Sans", Arial;
-  }
   .pie-chart--wrapper {
-    width: 400px;
-    margin: 30px auto;
     text-align: center;
   }
   .pie-chart__pie, .pie-chart__legend {
