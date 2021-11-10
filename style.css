@@ -363,8 +363,7 @@
    height: 100vh;
    overflow-x: hidden;
    overflow-y: scroll; }
-   #webslides::-webkit-scrollbar {
-     display: none; }
+
  
  li li {
    margin-left: 1.6rem; }
