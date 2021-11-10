@@ -1,6 +1,4 @@
- window.ws = new WebSlides();
-
-
+ 
 
 function sliceSize(dataNum, dataTotal) {
     return (dataNum / dataTotal) * 360;
@@ -93,3 +91,6 @@ function sliceSize(dataNum, dataTotal) {
   
   createPieCharts();
   
+ 
+ window.ws = new WebSlides();
+
