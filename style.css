@@ -3863,7 +3863,7 @@
     position: absolute;
     bottom: 1em;
     right: 1em;
-    font-size: smaller;
+    font-size: x-small;
     text-align: right;
   }
   .pie-chart span:after {
