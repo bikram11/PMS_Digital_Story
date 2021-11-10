@@ -3847,8 +3847,8 @@
         #4d3a2f 100%
     );
     position: relative;
-    width: 500px;
-    min-height: 350px;
+    width: 100%;
+    min-height: 450px;
     margin: 0;
     outline: 1px solid #ccc;
   }
