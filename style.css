@@ -3803,7 +3803,7 @@
     background:
       radial-gradient(
         circle closest-side,
-        transparent 100%,
+        transparent 90%,
         white 0
       ),
       conic-gradient(
@@ -3855,9 +3855,9 @@
   .pie-chart cite {
     position: absolute;
     bottom: 0;
-    font-size: 80%;
+    font-size: xx-small;
     padding: 1rem;
-    color: gray;
+    color: black;
   }
   .pie-chart figcaption {
     position: absolute;
