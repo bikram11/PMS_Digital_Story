@@ -3,8 +3,8 @@
 // Listening to a button click.
 $('[data-switch]').on('click', function (e) {
     var $page = $('#page-4'),
-    var $page_image = $('#page-4_image')
-        blockToShow = e.currentTarget.getAttribute('data-switch');
+        blockToShow = e.currentTarget.getAttribute('data-switch'),
+        $page_image = $('#page-4_image');
 
     // Hide all children.
     $page.children().hide();
