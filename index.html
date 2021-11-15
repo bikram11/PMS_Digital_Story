@@ -104,8 +104,8 @@
       <!--Slide 4-->
       <section>
         <span class="background" style="background-image:url('./images/background2.png')"></span>
-        <div class="wrap" id="1">
-          <ul class="flexblock features">
+        <div class="wrap" id="page-4">
+          <ul class="flexblock features" id="sub-1">
             <li style="background-color: white;">
               <div>
                 <h1><strong>Case Study</strong></h1>
@@ -121,11 +121,11 @@
                   
                 </p>
                 <p>
-                  <button id="btnClick" class="button zoomIn">
+                  <button data-switch="#sub-1"class="button zoomIn">
                     Previous
                   </button>
       
-                  <button id="btnClick" class="button zoomIn">
+                  <button data-switch="#sub-2" class="button zoomIn">
                     Next
                   </button>
                 </p>
@@ -138,12 +138,7 @@
             </li>
 
           </ul>
-        </div>
-        <div id="2" style="display:none;">
-          My Dynamic Content
-      </div>
-        <div class="wrap" id="static" style="display:none;">
-          <ul class="flexblock features">
+          <ul class="flexblock features" id="sub-2">
             <li style="background-color: white;">
               <div>
                 <h1><strong>Case Study changed</strong></h1>
@@ -161,11 +156,11 @@
                 
               </div>
               <p>
-                <button id="btnClick" class="button zoomIn">
+                <button data-switch="#sub-1" class="button zoomIn">
                   Previous
                 </button>
     
-                <button id="btnClick" class="button zoomIn">
+                <button data-switch="#sub-2" class="button zoomIn">
                   Next
                 </button>
               </p>
