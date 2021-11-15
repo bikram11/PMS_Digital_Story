@@ -3888,3 +3888,7 @@
       opacity: 0;
     }
   }
+
+  ul.a {
+    list-style-type: circle;
+  }
