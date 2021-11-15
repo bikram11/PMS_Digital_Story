@@ -10,4 +10,5 @@ $('[data-switch]').on('click', function (e) {
 
     // And show the requested component.
     $page.children(blockToShow).show();
+    $page.children(blockToShow+"_image").show();
 });
