@@ -17,11 +17,15 @@ $('[data-switch]').on('click', function (e) {
     $page_button.children(blockToShow+"_buttons").show();
 });
 
-$('[data-ii]').on('click', function (e) {
+$('.prob-class').on('click', function (e) {
+    
     var $page2 = $('#page-5'),
-        blockToShow = e.currentTarget.getAttribute('data-ii'),
+        blockToShow = e.currentTarget.getAttribute('data-switch'),
         $page_image2 = $('#page-5_image');
-
+    
+    
+    event.stopPropagation();
+    event.stopImmediatePropagation();
     // Hide all children.
     $page2.children().hide();
     $page_image2.children().hide();
