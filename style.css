@@ -3918,9 +3918,35 @@
   }
   
   #pin-1 {
-    top:29%;
-    left:36%;
+    top:17%;
+    left:28%;
   }
+
+  #pin-2 {
+    top:42%;
+    left:37%;
+  }
+
+  #pin-3 {
+    top:72%;
+    left:63%;
+  }
+
+  #pin-4 {
+    top:68%;
+    left:13%;
+  }
+
+  #pin-5 {
+    top:87%;
+    left:40%;
+  }
+
+  #pin-6 {
+    top:61%;
+    left:12%;
+  }
+
   
   .box:hover > .pin-text {
     display: block;
