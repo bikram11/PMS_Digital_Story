@@ -3952,6 +3952,10 @@
     display: block;
   }
   
+  .hover-bot{
+    border: none;
+    background-color: transparent;
+  }
   .pin-text {
     position: absolute;
     top:50%;
