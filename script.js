@@ -18,14 +18,14 @@ $('[data-switch]').on('click', function (e) {
 });
 
 $('[data-ii]').on('click', function (e) {
-    var $page = $('#page-5'),
+    var $page2 = $('#page-5'),
         blockToShow = e.currentTarget.getAttribute('data-ii'),
-        $page_image = $('#page-5_image');
+        $page_image2 = $('#page-5_image');
 
     // Hide all children.
-    $page.children().hide();
-    $page_image.children().hide();
+    $page2.children().hide();
+    $page_image2.children().hide();
     // And show the requested component.
-    $page.children(blockToShow).show();
-    $page_image.children(blockToShow+"_image").show();
+    $page2.children(blockToShow).show();
+    $page_image2.children(blockToShow+"_image").show();
 });
