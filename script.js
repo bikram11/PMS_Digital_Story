@@ -19,7 +19,7 @@ $('[data-switch]').on('click', function (e) {
 
 $('[data-ii]').on('click', function (e) {
     var $page = $('#page-5'),
-        blockToShow = e.currentTarget.getAttribute('data-switch'),
+        blockToShow = e.currentTarget.getAttribute('data-ii'),
         $page_image = $('#page-5_image');
 
     // Hide all children.
