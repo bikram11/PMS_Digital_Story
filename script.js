@@ -18,6 +18,8 @@ $('[data-switch]').on('click', function (e) {
 });
 
 $('[data-ii]').on('click', function (e) {
+    var check = e.currentTarget.getAttribute('data-ii');
+    if(check!='33892'){
     var $page = $('#page-5'),
         blockToShow = e.currentTarget.getAttribute('data-ii'),
         $page_image = $('#page-5_image');
@@ -28,4 +30,5 @@ $('[data-ii]').on('click', function (e) {
     // And show the requested component.
     $page.children(blockToShow).show();
     $page_image.children(blockToShow+"_image").show();
+    }
 });
