@@ -3979,3 +3979,56 @@
       color:white;
       text-shadow: 1px 1px 1px #000;
   }
+
+  .team {
+    background-color: #ccc;
+  }
+  .team .team-title h2,
+  .team .team-title p {
+    text-align: center;
+  }
+  .team .profile-wrapper {
+    margin: 0 auto;
+    width: 95%;
+    overflow: hidden;
+  }
+  .team .profile-wrapper .profiles {
+    height: 341px;
+    background-color: white;
+    border-radius: 5px;
+  }
+  .team .profile-wrapper .profiles .pic-holder {
+    max-width: 164px;
+    height: 164px;
+    border-radius: 82px;
+    background-color: orange;
+    margin: 0 auto;
+    position: relative;
+    top: 25px;
+    box-shadow: inset 3px 3px 6px -2px #48804B;
+    -moz-box-shadow: inset 3px 3px 6px -2px #48804B;
+    -webkit-box-shadow: inset 3px 3px 6px -2px #48804B;
+    -o-box-shadow: inset 3px 3px 6px -2px #48804B;
+    background-image: url("http://placehold.it/147x147");
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: center;
+  }
+  .team .profile-wrapper .profiles .desc {
+    padding: 45px 0 20px 0;
+  }
+  .team .profile-wrapper .profiles .desc h5,
+  .team .profile-wrapper .profiles .desc p {
+    text-align: center;
+  }
+  .team .profile-wrapper .profiles .twitter-button {
+    max-width: 204px;
+    height: 43px;
+    background-color: orange;
+    margin: 0 auto;
+    border-radius: 2px;
+  }
+  .team .profile-wrapper .profiles .twitter-button .fa-twitter {
+    font-size: 35px;
+    color: white;
+  }
