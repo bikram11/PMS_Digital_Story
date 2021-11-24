@@ -4011,7 +4011,7 @@
     -o-box-shadow: inset 3px 3px 6px -2px #48804B;
     background-image: url("http://placehold.it/147x147");
     background-repeat: no-repeat;
-    background-size: 90%;
+    background-size: 100%;
     background-position: center;
   }
   .team .profile-wrapper .profiles .desc {
