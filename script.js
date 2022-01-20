@@ -37,7 +37,7 @@ $('[data-ii]').on('click', function (e) {
 Highcharts.chart('container', {
 
     title: {
-      text: 'Highcharts pie chart'
+      text: 'Surface Problems on sidewalks like potholes, cracks; and problems like short sidewalks or missing sidewalks amount to more than 40% of the problems faced by people with mobility impairments'
     },
   
     xAxis: {
@@ -49,25 +49,25 @@ Highcharts.chart('container', {
       allowPointSelect: true,
       keys: ['name', 'y', 'selected', 'sliced'],
       data: [
-        ['Audible/visual/tactile info limited', 29.9, false],
-        ['Crosswalk time too short', 71.5, false],
-        ['Crosswalks not marked/missing', 106.4, false],
-        ['Curb cut/ramp/stair/grade problems', 129.2, false],
-        ['Difficult to see/be seen', 144.0, false],
-        ['Don’t know when it’s safe to cross', 176.0, false],
-        ['Drainage poor', 135.6, false],
-        ['Drivers don’t stop for me', 148.5, false],
-        ['Grates and gaps', 71.5, false],
-        ['Insensitive/unaware drivers', 106.4, false],
-        ['Insensitive/unaware pedestrians', 129.2, false],
-        ['Lighting inadequate', 144.0, false],
-        ['Median/island problems', 176.0, false],
-        ['Moving traffic too close to me', 135.6, false],
-        ['Obstacles/protusions/low clearance', 148.5, false],
-        ['Passing space/width limited', 71.5, false],
-        ['Surface problems potholes/cracks', 106.4, true, true],
-        ['oo few/missing sidewalks/paths', 129.2, true, true],
-        ['Other problems', 144.0, false],
+        ['Audible/visual/tactile info limited', 3.71, false],
+        ['Crosswalk time too short', 11.31, false],
+        ['Crosswalks not marked/missing', 11.22, false],
+        ['Curb cut/ramp/stair/grade problems', 7.48, false],
+        ['Difficult to see/be seen', 3.08, false],
+        ['Don’t know when it’s safe to cross', 10.94, false],
+        ['Drainage poor', 3.11, false],
+        ['Drivers don’t stop for me', 16.44, false],
+        ['Grates and gaps', 1.08, false],
+        ['Insensitive/unaware drivers', 24.34, false],
+        ['Insensitive/unaware pedestrians', 1.86, false],
+        ['Lighting inadequate', 3.76, false],
+        ['Median/island problems', 0.91, false],
+        ['Moving traffic too close to me', 3.73, false],
+        ['Obstacles/protusions/low clearance', 5.5, false],
+        ['Passing space/width limited', 3.13, false],
+        ['Surface problems potholes/cracks', 21.43, true, true],
+        ['Too few/missing sidewalks/paths', 19.05, true, true],
+        ['Other problems', 4.93, false],
       ],
       showInLegend: true
     }]

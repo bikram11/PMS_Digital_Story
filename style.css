@@ -4241,8 +4241,8 @@
   /* Series options */
   /* Default colors */
   .highcharts-color-0 {
-    fill: #7cb5ec;
-    stroke: #7cb5ec;
+    fill: #7cb6ec96;
+    stroke: #7cb6ecc9;
   }
   
   .highcharts-color-1 {
@@ -4286,6 +4286,56 @@
   }
   
   .highcharts-color-9 {
+    fill: #91e8e1;
+    stroke: #91e8e1;
+  }
+
+  .highcharts-color-10 {
+    fill: #91e8e1;
+    stroke: #91e8e1;
+  }
+
+  .highcharts-color-11 {
+    fill: #91e8e1;
+    stroke: #91e8e1;
+  }
+
+  .highcharts-color-12 {
+    fill: #91e8e1;
+    stroke: #91e8e1;
+  }
+
+  .highcharts-color-13 {
+    fill: #91e8e1;
+    stroke: #91e8e1;
+  }
+
+  .highcharts-color-14 {
+    fill: #91e8e1;
+    stroke: #91e8e1;
+  }
+
+  .highcharts-color-15 {
+    fill: #91e8e1;
+    stroke: #91e8e1;
+  }
+
+  .highcharts-color-16 {
+    fill: #91e8e1;
+    stroke: #91e8e1;
+  }
+
+  .highcharts-color-17 {
+    fill: #91e8e1;
+    stroke: #91e8e1;
+  }
+
+  .highcharts-color-18 {
+    fill: #91e8e1;
+    stroke: #91e8e1;
+  }
+
+  .highcharts-color-19 {
     fill: #91e8e1;
     stroke: #91e8e1;
   }
