@@ -34,93 +34,42 @@ $('[data-ii]').on('click', function (e) {
     }
 });
 
+Highcharts.chart('container', {
 
-var drawPieChart = function(data, colors) {
-    var canvas = document.getElementById('pie');
-    var ctx = canvas.getContext('2d');
-    var x = canvas.width / 2;
-        y = canvas.height / 2;
-    var color,
-        startAngle,
-        endAngle,
-        total = getTotal(data);
-    
-    for(var i=0; i<data.length; i++) {
-      color = colors[i];
-      startAngle = calculateStart(data, i, total);
-      endAngle = calculateEnd(data, i, total);
-      
-      ctx.beginPath();
-      ctx.fillStyle = color;
-      ctx.moveTo(x, y);
-      ctx.arc(x, y, y-100, startAngle, endAngle);
-      ctx.fill();
-      ctx.rect(canvas.width - 200, y - i * 30, 12, 12);
-      ctx.fill();
-      ctx.font = "13px sans-serif";
-      ctx.fillText(data[i].label + " - " + data[i].value + " (" + calculatePercent(data[i].value, total) + "%)", canvas.width - 200 + 20, y - i * 30 + 10);
-    }
-  };
+    title: {
+      text: 'Highcharts pie chart'
+    },
   
-  var calculatePercent = function(value, total) {
-    
-    return (value / total * 100).toFixed(2);
-  };
+    xAxis: {
+      categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+    },
   
-  var getTotal = function(data) {
-    var sum = 0;
-    for(var i=0; i<data.length; i++) {
-      sum += data[i].value;
-    }
-        
-    return sum;
-  };
+    series: [{
+      type: 'pie',
+      allowPointSelect: true,
+      keys: ['name', 'y', 'selected', 'sliced'],
+      data: [
+        ['Audible/visual/tactile info limited', 29.9, false],
+        ['Crosswalk time too short', 71.5, false],
+        ['Crosswalks not marked/missing', 106.4, false],
+        ['Curb cut/ramp/stair/grade problems', 129.2, false],
+        ['Difficult to see/be seen', 144.0, false],
+        ['Don’t know when it’s safe to cross', 176.0, false],
+        ['Drainage poor', 135.6, false],
+        ['Drivers don’t stop for me', 148.5, false],
+        ['Grates and gaps', 71.5, false],
+        ['Insensitive/unaware drivers', 106.4, false],
+        ['Insensitive/unaware pedestrians', 129.2, false],
+        ['Lighting inadequate', 144.0, false],
+        ['Median/island problems', 176.0, false],
+        ['Moving traffic too close to me', 135.6, false],
+        ['Obstacles/protusions/low clearance', 148.5, false],
+        ['Passing space/width limited', 71.5, false],
+        ['Surface problems potholes/cracks', 106.4, true, true],
+        ['oo few/missing sidewalks/paths', 129.2, true, true],
+        ['Other problems', 144.0, false],
+      ],
+      showInLegend: true
+    }]
+  });
   
-  var calculateStart = function(data, index, total) {
-    if(index === 0) {
-      return 0;
-    }
-    
-    return calculateEnd(data, index-1, total);
-  };
-  
-  var calculateEndAngle = function(data, index, total) {
-    var angle = data[index].value / total * 360;
-    var inc = ( index === 0 ) ? 0 : calculateEndAngle(data, index-1, total);
-    
-    return ( angle + inc );
-  };
-  
-  var calculateEnd = function(data, index, total) {
-    
-    return degreeToRadians(calculateEndAngle(data, index, total));
-  };
-  
-  var degreeToRadians = function(angle) {
-    return angle * Math.PI / 180
-  }
-  
-  var data = [
-    { label: 'Audible/visual/tactile info limited', value: 90 },
-    { label: 'Crosswalk time too short', value: 150 },
-    { label: 'Crosswalks not marked/missing', value: 80 },
-    { label: 'Curb cut/ramp/stair/grade problems', value: 120 },
-    { label: 'Difficult to see/be seen', value: 120 },
-    { label: 'Don’t know when it’s safe to cross', value: 120 },
-    { label: 'Drainage poor', value: 120 },
-    { label: 'Drivers don’t stop for me', value: 120 },
-    { label: 'Grates and gaps', value: 120 },
-    { label: 'Insensitive/unaware drivers', value: 120 },
-    { label: 'Insensitive/unaware pedestrians', value: 120 },
-    { label: 'Lighting inadequate', value: 120 },
-    { label: 'Median/island problems', value: 120 },
-    { label: 'Moving traffic too close to me', value: 120 },
-    { label: 'Obstacles/protusions/low clearance', value: 120 },
-    { label: 'Passing space/width limited', value: 120 },
-    { label: 'Surface problems potholes/cracks', value: 120 },
-    { label: 'Too few/missing sidewalks/paths', value: 120 },
-    { label: 'Other problems', value: 120 },
-  ];
-  var colors = ['#003f5c', '#39CCCC', '#3D9970', '#001F3F', '#85144B', '#2f4b7c', '#665191', '#a05195', '#d45087', '#f95d6a', '#ff7c43', '#ffa600','#003f5c', '#39CCCC', '#3D9970', '#001F3F', '#85144B', '#2f4b7c', '#665191'  ];
-  
-  drawPieChart(data, colors);
