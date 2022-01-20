@@ -1290,7 +1290,8 @@
    padding: 2.4rem;
    -webkit-transition: all .4s ease-in-out;
    transition: all .4s ease-in-out;
-   width: 100%; }
+   width: 100%; 
+  opacity: 1;}
  
  header p,
  footer p {
