@@ -43,7 +43,9 @@ Highcharts.chart('container', {
     xAxis: {
       categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
     },
-  
+    legend:{
+        title: 'SOURCE:  U.S. Department of Transportation, Bureau of Transportation Statistics, 2011 National Transportation Availability and Use Survey'
+    },
     series: [{
       type: 'pie',
       allowPointSelect: true,
