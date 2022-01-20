@@ -43,11 +43,6 @@ Highcharts.chart('container', {
     xAxis: {
       categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
     },
-    legend:{
-        enabled: true,
-        title: {
-            text:'SOURCE:  U.S. Department of Transportation, Bureau of Transportation Statistics, 2011 National Transportation Availability and Use Survey'}
-    },
     series: [{
       type: 'pie',
       allowPointSelect: true,
@@ -73,7 +68,10 @@ Highcharts.chart('container', {
         ['Too few/missing sidewalks/paths', 19.05, true, true],
         ['Other problems', 4.93, false],
       ],
-
+      showInLegend: true,
+      credits:{
+          text:"SOURCE:  U.S. Department of Transportation, Bureau of Transportation Statistics, 2011 National Transportation Availability and Use Survey"
+      }
     }]
   });
   
