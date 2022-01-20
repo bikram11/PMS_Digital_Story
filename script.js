@@ -70,6 +70,7 @@ Highcharts.chart('container', {
       ],
       showInLegend: true,
       credits:{
+          enabled:true,
           text:"SOURCE:  U.S. Department of Transportation, Bureau of Transportation Statistics, 2011 National Transportation Availability and Use Survey"
       }
     }]
