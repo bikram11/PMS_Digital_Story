@@ -33,14 +33,20 @@ $('[data-ii]').on('click', function (e) {
     $page_image.children(blockToShow+"_image").show();
     }
 });
-
+Highcharts.setOptions({
+    colors: ['#50B432', '#ED561B', '#DDDF00', '#24CBE5', '#64E572', '#FF9655', '#FFF263', '#6AF9C4'],
+    credits:{
+        enabled:true,
+        text:"SOURCE:  U.S. Department of Transportation, Bureau of Transportation Statistics, 2011 National Transportation Availability and Use Survey"
+    }
+   },
+   );
 Highcharts.chart('container', {
 
     title: {
       text: 'Surface Problems on sidewalks like potholes, cracks; and problems like short sidewalks or missing sidewalks amount to more than 40% of the problems faced by people with mobility impairments'
     },
-    colors: ['#4572A7', '#AA4643', '#89A54E', '#80699B', '#3D96AE',
-        '#DB843D', '#92A8CD', '#A47D7C', '#B5CA92'],
+    
     xAxis: {
       categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
     },
